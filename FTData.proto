@@ -1,0 +1,11 @@
+message FaceTrackFrame {
+  required int64 timestamp = 1;
+  required string label = 2;
+  repeated Point trackedPoint = 3 [packed=true];
+ }
+
+message Point {
+  required double x = 1;
+  required double y = 2;
+  required double z = 3;
+}
